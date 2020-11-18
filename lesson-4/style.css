@@ -1,0 +1,99 @@
+СЕЛЕКТОР ТЕГА body {
+  background-color: rgb(245, 186, 186);
+  color: rgb(11, 12, 11);
+}
+
+/* * - универсальный селектор */
+
+/* СЕЛЕКТОР КЛАССА
+.full-document {
+  font-size: 30px;
+} */
+/* СЕЛЕКТОР ИДЕНТИФИКАТОРА */
+/* #header {
+  background-color: teal;
+}
+/* СЕЛЕКТОР ПОТОМКА */
+/* .main-nav img {
+  border: 10px solid green;
+} */
+/* СЕЛЕКТОР РЕБЕНКА (то же, что и потомок, 
+только следующий по вложенности, а именно 
+nav - родитель; a, ul, ul - 3 ребенка */
+/* .main-nav > a {
+  border: 1px solid rgb(98, 201, 98);
+} */
+/* СЕЛЕКТОР АТРИБУТА */
+/* a[href] {
+  color: green;
+} */
+
+/* СПЕЦИФИЧНОСТЬ СЕЛЕКТОРОВ
+0 - если через атрибут style
+0 - id
+0 - class , pseudo-class, attribute
+0 -  tag , pseudo-elements */
+
+/* PRACTICE */
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  color: #ff6c00;
+}
+.online-sign {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.nav-list p::first-letter {
+  text-transform: capitalize;
+}
+
+.hero,
+.services {
+  background-color: black;
+  color: white;
+}
+
+.about p {
+  color: #555555;
+}
+
+.hero-description p,
+.services p,
+.services span {
+  color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.masters {
+  color: #303030;
+}
+.employee {
+  color: #ff6c00;
+}
+
+.services-list {
+  width: 50%;
+}
+
+.services-list span:first-child {
+  text-align: left;
+}
+
+.services-list span:first-child {
+  text-align: right;
+}
+
+.employee-info h3,
+.employee-info p {
+  text-align: center;
+}
